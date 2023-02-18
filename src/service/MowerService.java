@@ -3,6 +3,9 @@ package service;
 import domain.Lawn;
 import domain.Mower;
 
+/**
+ * MowerService class
+ */
 public class MowerService {
 
     public static Lawn mow(String fileName) {

@@ -3,6 +3,7 @@ package domain;
 import java.util.List;
 
 /**
+ * Mower Class
  * Reprents a Mower and its parameters
  */
 public class Mower {
@@ -25,6 +26,7 @@ public class Mower {
         this.directionList = directionList;
     }
 
+    // Mow the Lawn by moving according to the directions
     public void mow(int maxXpostion, int maxYposition) {
         for (Direction direction : directionList) {
             switch (direction) {
@@ -41,6 +43,7 @@ public class Mower {
         }
     }
 
+    // Turning left by 90°
     void turnLeft() {
         switch (orientation) {
             case N:
@@ -56,9 +59,9 @@ public class Mower {
                 orientation = Orientation.N;
                 break;
         }
-
     }
 
+    // Turning right by 90°
     void turnRight() {
         switch (orientation) {
             case N:
@@ -76,6 +79,7 @@ public class Mower {
         }
     }
 
+    // advance if possible
     void advance(int maxXPosition, int maxYPosition) {
         switch (orientation) {
             case N:
@@ -103,7 +107,4 @@ public class Mower {
         return orientation;
     }
 
-    public List<Direction> getDirectionList() {
-        return directionList;
-    }
 }
