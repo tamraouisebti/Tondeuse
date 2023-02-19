@@ -17,13 +17,13 @@ To make a solution we made out classes as represented in the diagram bellow, the
 
 This diagram represents the classes that we created to calculate the final position of the Mower (Les tondeuses), and they are classified as follows :
 
-* **Direction** : an enumeration that represents the moves that can be mode by the mower (left, right, advance).
-* **Orientation** : an enumeration that represents the orientations of a mower (north, south, east, west).
-* **Position** : a class that contains the coordinates of the mower (x, y), this class has the methods that update the position according to the Orientations.
-* **Mower** : a class that represents the mower and its attributes.
-* **Lawn** : a class that represents the field to be mown, it contains the mowers and the size of the lawn.
+* [Direction](https://github.com/tamraouisebti/Tondeuse/blob/master/src/domain/Direction.java): an enumeration that represents the moves that can be mode by the mower (left, right, advance).
+* [Orientation](https://github.com/tamraouisebti/Tondeuse/blob/master/src/domain/Orientation.java): an enumeration that represents the orientations of a mower (north, south, east, west).
+* [Position](https://github.com/tamraouisebti/Tondeuse/blob/master/src/domain/Position.java): a class that contains the coordinates of the mower (x, y), this class has the methods that update the position according to the Orientations.
+* [Mower](https://github.com/tamraouisebti/Tondeuse/blob/master/src/domain/Mower.java): a class that represents the mower and its attributes.
+* [Lawn](https://github.com/tamraouisebti/Tondeuse/blob/master/src/domain/Lawn.java): a class that represents the field to be mown, it contains the mowers and the size of the lawn.
 
-Also, a custom **exception** was created to be thrown in case the file is badly formatted.
+Also, a custom [exception](https://github.com/tamraouisebti/Tondeuse/blob/master/src/exception/BadlyFormattedInputFileException.java) was created to be thrown in case the file is badly formatted .
 
 ## Example
 In this section we are going to execute our solution on the test given in the description of the problem.
@@ -42,4 +42,4 @@ If no test file is specified it will by default run with this example, the resul
 
 <img src="https://github.com/tamraouisebti/Tondeuse/blob/master/doc/example.PNG" width="700">
 
-Also, the **Unit test** was written based on this example.
+Also, the [Unit test](https://github.com/tamraouisebti/Tondeuse/blob/master/src/test/MowerTest.java) was written based on this example.
